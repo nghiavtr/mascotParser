@@ -1,0 +1,18 @@
+exportPattern("^[[:alpha:]]+")
+exportMethods(
+    "addQueryHitInfo",
+    "getAssignedPeaks",
+    "getKeywordsInfo",
+    "getMSMSqueryInfo",
+    "getPosHits",
+    "getUnassignedPeaks",
+    "parse",
+    "parseQueryhit",
+    "plotSpec",
+    "plotSpecPanel",
+    "setInputfilename" 
+)
+exportClasses(
+    "MascotParser",
+     "QueryHits" 
+)

@@ -1,0 +1,10 @@
+Package: MascotParser
+Type: Package
+Title: Parse Mascot results file (*.dat) from both PMF and MSMS searches
+Version: 1.0
+Date: 2014-08-14
+Author: VU Trung Nghia
+Maintainer: VU Trung Nghia <nghiavtr@gmail.com>
+Description: parse Mascot results file (*.dat) from both PMF and MSMS searches; support few functions to extract useful information from the search results such as: positive hits, assigned/unassigned (positive hit) peaks, etc..; plot spectra in both MS1 and MS2 levels, etc..
+License: GPL v2
+Depends: methods
