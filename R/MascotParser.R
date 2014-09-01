@@ -413,8 +413,11 @@ setGeneric("getUnassignedPeaks",function(object, scoreThres=41){
 
 setMethod("getUnassignedPeaks","MascotParser", function(object,scoreThres=41){
 	if (object@searchType=="PMF"){
-		posPeakId <- getAssignedPeaks(object,scoreThres);		
-		return(c(1:length(myParse@qmass))[-posPeakId]);
+		posPeakId <- getAssignedPeaks(object,scoreThres);
+		if (length(posPeakId)>0)		
+			return(c(1:length(myParse@qmass))[-posPeakId])
+		else
+			return(c(1:length(myParse@qmass)));
 	}else{
 		cat("case of MSMS will be implemented soon \n");
 
