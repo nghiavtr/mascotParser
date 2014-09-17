@@ -9,10 +9,10 @@ A parser for Mascot search results ( both PMF and MSMS) in R package.
 library(MascotParser)
 filename <- "MSMS_Mascot_search_result.dat";
 
-##parse the dat file
+###parse the dat file
 myParse <- parse(new("MascotParser"),filename)
 
-# Get MS1 peaks
+## Get MS1 peaks
 myParse@qexp
 myParse@qintensity
 
