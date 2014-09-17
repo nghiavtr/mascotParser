@@ -1,0 +1,37 @@
+?setwd
+?file.list
+?files.list
+?file.lists
+?list.files
+?read.table
+?system.file
+?showMethods
+?rbin
+?rbind
+?save.image
+?colSums
+?unique
+?apply
+?unlist
+?sapply
+?p.adjust
+?read.table
+setwd("/Nghiavtr/Workplaces/Projects/github/MascotParser");
+library(MascotParser)
+filename <- "/Nghiavtr/Workplaces/Projects/Aberrant_Peaks/PXD000030_data/13376798-slide D3.dat";
+myParse <- parse(new("MascotParser"),filename)
+getMSMSqueryInfo(myParse,1)
+getMSMSqueryInfo(myParse)
+myParse
+showMethods(classes="MascotParser")
+myParse$qexp
+myParse@qexp
+myParse$qintensity
+myParse@qintensity
+getMSMSqueryInfo(myParse,3)
+myms2=getMSMSqueryInfo(myParse,3)#
+myms2$mz
+myParse@qmatch
+myParse@PIHhitScores
+myParse@PIHnumHits
+myParse@MSMSnumQuery

@@ -101,21 +101,7 @@ setMethod("parse","MascotParser", function(object,filename){
 	}#end of while
 
 
-	#extract the information of taxonomy
-	if (searchType != "PMF"){
-		myflag = 0;
-		while (length(aLine <- readLines(fi, n = 1, warn = FALSE)) > 0) {
-			if (length(grep("Content-Type",aLine)) > 0 & length(grep("taxonomy",aLine)) > 0){
-				while (length(aSubLine <- readLines(fi, n = 1, warn = FALSE)) > 0) {
-					if (length(grep(boundaryCode,aSubLine)) > 0){ myflag = 1; break;}
-					if (nchar(aSubLine)) taxonomy<-paste(aSubLine,taxonomy,sep=";");
-				}
-			}
-			if (myflag == 1)break;
-		}#end of while
-	}else{
-		taxonomy="";
-	}
+	
 	#extract the information of header
 	myflag = 0;
 	while (length(aLine <- readLines(fi, n = 1, warn = FALSE)) > 0) {
