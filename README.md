@@ -29,6 +29,9 @@ myms2=getMSMSqueryInfo(myParse,3)
 myms2$mz
 myms2$intensity
 
+###### plot MS1 mass spetrum
+plotSpec(myParse,specTitle=NULL,queryId=NULL)
+
 ##### plot mass spectrum of query 1
 plotSpec(myParse,specTitle=NULL,queryId=1)
 
