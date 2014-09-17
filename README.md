@@ -4,7 +4,7 @@ mascotParser
 A parser for Mascot search results ( both PMF and MSMS) in R package.
 
 
-#1. Example for parsing MSMS Mascot search result files:
+##1. Example for parsing MSMS Mascot search result files:
 
 library(MascotParser)
 filename <- "MSMS_Mascot_search_result.dat";
@@ -42,9 +42,10 @@ int2=getMSMSqueryInfo(myParse,2)$intensity
 plotSpecPanel(mz1,int1,mz2,int2,xlimVal=500,plotTitle="test title")
 
 
-#2. Example for parsing PMF Mascot search result files:
+##2. Example for parsing PMF Mascot search result files:
 
 library(MascotParser)
+
 filename <- "PMF_Mascot_search_result.dat";
 
 ###### parse the dat file
