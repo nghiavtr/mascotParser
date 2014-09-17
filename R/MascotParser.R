@@ -289,7 +289,7 @@ setMethod("parse","MascotParser", function(object,filename){
 	object@fastafile=fastafile;
 	object@database=database;
 	object@enzyme=enzyme;
-	object@taxonomy=taxonomy;
+	if (!is.null(taxonomy)) object@taxonomy=taxonomy;
 	object@header=header;
 	object@parameters=parameters;
 
