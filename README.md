@@ -54,15 +54,15 @@ plotSpecPanel(mz1,int1,mz2,int2,xlimVal=500,plotTitle="test title")
 library(MascotParser)
 filename <- "PMF_Mascot_search_result.dat";
 ```
-###### parse the dat file
+##### parse the dat file
 ```
 myParse <- parse(new("MascotParser"),filename)
 ```
-###### get unassigned peaks from the search
+##### get unassigned peaks from the search
 ```R
 negPeaks <- myParse@qexp[getUnassignedPeaks(myParse, scoreThres=MascotThres)]
 ```
-###### plot PMF mass spetrum
+##### plot PMF mass spetrum
 ```R
 plotSpec(myParse,specTitle=NULL,queryId=NULL)
 ```
