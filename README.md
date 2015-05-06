@@ -3,7 +3,7 @@ mascotParser
 
 A parser for Mascot search results ( both PMF and MSMS) in R package.
 
-# How to install "speaq"
+# How to install "mascotParser"
 ### From Github using R:
 ```R
 install.packages("devtools")
